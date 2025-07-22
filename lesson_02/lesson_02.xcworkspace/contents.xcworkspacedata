@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:code/Deck.playground">
+   </FileRef>
+   <FileRef
+      location = "group:code/Set.playground">
+   </FileRef>
+   <FileRef
+      location = "group:code/Dictionary.playground">
+   </FileRef>
+   <FileRef
+      location = "group:code/BlackjackUIVirtualLab.playground">
+   </FileRef>
+   <FileRef
+      location = "group:code/BlackjackUI.playground">
+   </FileRef>
+   <FileRef
+      location = "group:code/ButtonAdventure.playground">
+   </FileRef>
+   <FileRef
+      location = "group:code/ValueVsReference.playground">
+   </FileRef>
+   <FileRef
+      location = "group:code/Classes.playground">
+   </FileRef>
+   <FileRef
+      location = "group:code/Structs.playground">
+   </FileRef>
+   <FileRef
+      location = "group:code/Enums.playground">
+   </FileRef>
+</Workspace>
