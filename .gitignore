@@ -1,9 +1,16 @@
 .DS_Store
 
-# Xcode
+# Xcode user-specific files
 *.xcuserstate
-*.xcworkspace/xcuserdata
-*.xcodeproj/project.xcworkspace/xcuserdata
+*.xcscmblueprint
+
+# xcuserdata folders (user-specific, safe to ignore)
+**/xcuserdata/
+
+# IDE workspace and project data
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
 
 # Build artifacts
 build/

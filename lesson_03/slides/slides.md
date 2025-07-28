@@ -48,12 +48,18 @@ Keep improving your Blackjack UI!
 
 | SwiftUI Feature      | Details                                         |
 |-----------------------|------------------------------------------------|
-| **📋 List**           | Displays a scrollable list of rows             |
-| **🖱 ScrollView**     | Makes content scrollable                       |
-| **✍️ TextField**      | Lets users type text                           |
+| 📋 `List`           | Displays a scrollable list of rows             |
+| 🖱 `ScrollView`     | Makes content scrollable                       |
+| ✍️ `TextField`      | Lets users type text                           |
 | **🤏 Gestures**       | Detects user interactions like tap, drag, etc. |
 | **✨ Animations**     | Animates changes in views                      |
-| **🗺️ NavigationStack**| Enables navigation between screens             |
+
+---
+
+| SwiftUI Feature          | Details                                          |
+|--------------------------|--------------------------------------------------|
+| 🗺️ `NavigationStack`     | Enables navigation between screens               |
+| 🔭 `ObservableObject`    | A class that broadcasts changes using @Published |
 
 ---
 
@@ -289,4 +295,28 @@ NavigationLink("Show User") {
     UserView(name: "Fadzuli")
 }
 
+```
+
+---
+
+### 🔭 `ObservableObject`
+
+```swift
+class Player: ObservableObject {
+    let name: String
+    @Published var hand: [Card] = []
+    @Published var isStanding = false
+    @Published var message = ""
+
+    var handValue: Int {
+        ...
+    }
+}
+
+struct ContentView: View {
+    @StateObject private var player1 = Player(name: "Player 1")
+    @StateObject private var player2 = Player(name: "Player 2")
+
+    ...
+}
 ```
