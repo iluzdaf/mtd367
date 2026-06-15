@@ -1,47 +1,67 @@
-# 🚀 MTD 367 iOS Application Development
+# MTD 367 iOS Application Development
 
-Welcome to **MTD 367 iOS Application Development**! 🎉
+This is the public-facing repository for MTD 367 iOS Application Development at SUSS. It contains student-facing lesson materials, slide exports, review notes, and Swift/iOS example code.
 
-This repository contains all course materials, slides, and example code for the MTD 367 module taught at SUSS.
+Private assessment materials are intentionally not stored here. TMA/ECA questions, marking guides, rubrics, model answers, and private course-planning documents should live in restricted Google Docs/Drive folders only.
 
-## 📚 Contents
+## Repository Layout
 
-- **Slides**
-  Marp slides in Markdown format and exported HTML presentations for each lesson.
+```text
+years/
+  2025/
+    lesson_01/
+      slides/
+      code/
+    reviews/
+  2026/
+    lesson_01/
+      slides/
+        README.md
+        exports/
+      code/
+docs/
+```
 
-- **Code**
-  Swift Playgrounds and iOS app projects covering key course topics
+## Current Materials
 
-## 💻 How to Use This Repo
+- `years/2025/` contains the archived 2025 public lesson materials.
+- `years/2025/reviews/` contains post-submission review material that is safe for students to read after submission.
+- `years/2026/` is the working area for the next course run.
 
-1. Clone the repository:
+## Slides
 
-    ```bash
-    git clone https://github.com/iluzdaf/mtd367.git
-    ```
+For 2026 onward, Canva is the source of truth for slides.
 
-2. Open slides (`.md` or `.html`):
-    - For `.md` slides:
-        - Install **Marp for VS Code** to preview slides directly in VS Code.
-    - For `.html` slides:
-        - Open them in any web browser.
+Each lesson should keep slide metadata and links in:
 
-3. Open Swift Playgrounds:
-    - Navigate to the relevant lesson folder.
-    - Open `.playground` files in Xcode.
+```text
+years/2026/lesson_nn/slides/README.md
+```
 
-4. Follow along with lessons and labs.
+Student-facing slide exports should go in:
 
-## 📝 License
+```text
+years/2026/lesson_nn/slides/exports/
+```
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Exports may include PDF or HTML files when they are useful for students. Do not add private Canva links or assessment-only slide content to this repository.
 
-Feel free to use, modify, and distribute in your own projects!
+## Code
 
-## ❓ Questions or Feedback
+Lesson code belongs with the matching lesson:
 
-Feel free to reach out if you have questions or suggestions:
+```text
+years/2026/lesson_nn/code/
+```
 
-📧 **Email:** <muhammadfadzuli001@suss.edu.sg>
+Use Swift Playgrounds or Xcode projects as appropriate for the lesson. Avoid committing local Xcode user files or build artifacts.
 
-Happy coding! 🚀
+## Private Assessment Context
+
+Assessment context should be kept in restricted Google Docs/Drive folders, not in this repo. See [docs/private-context-workflow.md](docs/private-context-workflow.md) for the workflow.
+
+Codex or other AI assistants may use private assessment documents only when explicitly asked to design assessment-aligned public materials. Public outputs must be sanitized and must not reproduce private assessment text.
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.

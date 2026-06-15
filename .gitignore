@@ -37,4 +37,23 @@ fastlane/screenshots/
 timeline.xctimeline
 playground.xcworkspace
 
+# PDFs are ignored by default, with explicit exceptions for public course exports.
 *.pdf
+!years/2025/reviews/*.pdf
+!years/2025/lesson_*/slides/*.pdf
+!years/2026/lesson_*/slides/exports/*.pdf
+
+# Private assessment material and local-only working folders
+/private/
+/assessments-private/
+/*_private/
+/*TMA*_questions*
+/*ECA*_questions*
+/*marking*
+/*rubric*
+**/*TMA*_questions*
+**/*ECA*_questions*
+**/*tma*_questions*
+**/*eca*_questions*
+**/*marking*
+**/*rubric*
